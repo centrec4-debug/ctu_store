@@ -815,7 +815,7 @@ function openCheckout(){
       <input type="tel" id="ckPhone" placeholder="09xx xxx xxx">
     </div>
     <div class="field">
-      <label>Địa chỉ nhận hàng</label>
+      <label>Địa chỉ nhận hàng (Nhận trực tiếp ghi "CTU STORE")</label>
       <input type="text" id="ckAddress" placeholder="Số nhà, đường, phường/xã, quận/huyện, tỉnh/thành">
     </div>
     <div class="field">
@@ -846,7 +846,7 @@ async function submitOrder(){
   const customerType = document.getElementById('ckType').value;
 
   if(!name || !phone){
-    showToast('Vui lòng điền đầy đủ họ tên, số điện thoại và địa chỉ');
+    showToast('Vui lòng điền đầy đủ họ tên, số điện thoại và địa chỉ nhận hàng');
     return;
   }
   if(!APPS_SCRIPT_URL || APPS_SCRIPT_URL.includes('DÁN_URL')){
