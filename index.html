@@ -805,7 +805,7 @@ function openCheckout(){
   const modal = document.getElementById('modalContent');
   modal.innerHTML = `
     <h3>Hoàn tất đặt hàng</h3>
-    <p class="sub">Điền thông tin để cửa hàng liên hệ giao hàng</p>
+    <p class="sub">Điền thông tin để cửa hàng liên hệ giao hàng (</p>
     <div class="field">
       <label>Họ và tên người nhận</label>
       <input type="text" id="ckName" placeholder="Nguyễn Văn A">
@@ -827,6 +827,7 @@ function openCheckout(){
       </select>
     </div>
     <div class="modal-summary">
+      <p class="sub">Đối với Anh/Chị mua hàng bằng hình thức gửi bưu điện phí vận chuyển sẽ do đơn vị chuyển phát trực tiếp thu khi giao hàng từ 10 - 30.000đ tùy theo khoảng cách địa lý</p>
       ${cart.map(l=>`<div class="row"><span>${l.name} (${l.size}) ×${l.qty}</span><span>${fmt(l.price*l.qty)}</span></div>`).join('')}
       <div class="row total"><span>Tổng cộng — ${qty} sản phẩm</span><span>${fmt(total)}</span></div>
     </div>
