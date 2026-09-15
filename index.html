@@ -428,6 +428,9 @@ footer strong{color:rgba(255,255,255,0.9);}
       </div>
     </div>
     <div class="topbar-actions">
+        <button onclick="window.open('https://centrec4-debug.github.io/tracuu_ctustore/', '_blank')">
+          Tra cứu đơn hàng
+        </button>
       <button class="cart-btn" onclick="openDrawer()">
         <i>🛍</i> Giỏ hàng <span class="cart-count" id="cartCount">0</span>
       </button>
@@ -578,9 +581,6 @@ const CATEGORIES = [
   {id:'cse',label:'Trường Kinh tế'},
   {id:'luuniem',label:'Quà lưu niệm'},
   {id:'60nam',label:'Kỷ niệm 60 năm'},
-  <button onclick="window.open('https://centrec4-debug.github.io/tracuu_ctustore/', '_blank')">
-  Tra cứu đơn hàng
-  </button>
 ];
 const CAT_LABEL = Object.fromEntries(CATEGORIES.map(c=>[c.id,c.label]));
 
