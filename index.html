@@ -832,7 +832,7 @@ function openCheckout(){
       </select>
     </div>
     <div class="modal-summary">
-      <p class="sub">Đối với Anh/Chị mua hàng bằng hình thức gửi bưu điện phí vận chuyển sẽ do đơn vị chuyển phát trực tiếp thu khi giao hàng từ 10 - 30.000đ tùy theo khoảng cách địa lý</p>
+      <p class="sub">Đối với Anh/Chị mua hàng bằng hình thức gửi bưu điện phí vận chuyển sẽ do đơn vị chuyển phát trực tiếp thu khi giao hàng từ 10.000đ - 35.000đ tùy theo khoảng cách địa lý!</p>
       ${cart.map(l=>`<div class="row"><span>${l.name} (${l.size}) ×${l.qty}</span><span>${fmt(l.price*l.qty)}</span></div>`).join('')}
       <div class="row total"><span>Tổng cộng — ${qty} sản phẩm</span><span>${fmt(total)}</span></div>
     </div>
